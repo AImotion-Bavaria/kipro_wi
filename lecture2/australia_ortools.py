@@ -30,10 +30,7 @@ solver = cp_model.CpSolver()
 status = solver.solve(model)
 
 if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
-    assignment = {}
     for var in [WA, NT, SA, QL, NSW, VT]:
-        assignment[var.name] = colors[solver.value(var)]
-        print(f"{var.name} = {assignment[var.name]};")
-    print("map written to australia_solution.svg")
+        print(f"{var.name} = {colors[solver.value(var)]};")
 else:
     print("=====UNSATISFIABLE=====")
