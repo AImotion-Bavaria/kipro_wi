@@ -16,10 +16,25 @@ Each lecture folder contains small examples, usually first written in
 | [australia_ortools.ipynb](lecture2/australia_ortools.ipynb) | Notebook version: solves the model, draws the map and lists all solutions |
 | [australia_viz.py](lecture2/australia_viz.py) | Drawing helpers used by the notebook (`draw_map`, `draw_all`) |
 | [decision_variables_ortools.py](lecture2/decision_variables_ortools.py) | How MiniZinc variable declarations (enums, ranges, Booleans, unbounded `int`) look in OR-Tools |
+| [parameters_ortools.py](lecture2/parameters_ortools.py) | How MiniZinc parameters (fixed constants) look in Python, and how to use them in a model |
+| [boolean_conditions_ortools.py](lecture2/boolean_conditions_ortools.py) | and, or, not, implication, counting and xor in CP-SAT |
+| [harbour_ortools.py](lecture2/harbour_ortools.py) | Ship assignment: boats to docks, with restricted domains |
+| [harbour_ortools.ipynb](lecture2/harbour_ortools.ipynb) | Notebook version: solves the model, draws the harbour and a selection of all solutions |
+| [harbour_viz.py](lecture2/harbour_viz.py) | Drawing helpers used by the harbour notebook (`draw_harbour`, `draw_all`) |
+| [arrays_ortools.py](lecture2/arrays_ortools.py) | Arrays of variables and parameters: lists vs. dicts, set-valued arrays as Boolean matrices, channeling |
+| [workers_ortools.py](lecture2/workers_ortools.py) | Assignment of robots to tasks: arrays, `all_different` and element constraints |
+| [mip_ortools.py](lecture2/mip_ortools.py) | A small mixed-integer program with float, integer and Boolean variables |
 
-**Try the notebook in your browser, no installation needed:**
+**Try the notebooks in your browser, no installation needed:**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/australia_ortools.ipynb)
+- Map colouring: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/australia_ortools.ipynb)
+- Harbour: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/harbour_ortools.ipynb)
+
+### [lecture3](lecture3/)
+
+| File | What it shows |
+|---|---|
+| [send_more_money_ortools.py](lecture3/send_more_money_ortools.py) | The cryptarithmetic puzzle SEND + MORE = MONEY with explicit carries, listing all solutions |
 
 ## Running the examples locally
 
@@ -52,6 +67,7 @@ A few differences to keep in mind when translating models:
 
 | MiniZinc | OR-Tools (CP-SAT) |
 |---|---|
+| `par int: n = 5;` | A plain Python constant: `n = 5` |
 | `enum color = {blue, green, red};` | No enums: use integers `0..n-1` and a list of names |
 | `var 1..10: x;` | `x = model.new_int_var(1, 10, "x")` |
 | `var bool: b;` | `b = model.new_bool_var("b")` |
