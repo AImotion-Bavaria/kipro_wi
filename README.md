@@ -17,10 +17,16 @@ Each lecture folder contains small examples, usually first written in
 | [australia_viz.py](lecture2/australia_viz.py) | Drawing helpers used by the notebook (`draw_map`, `draw_all`) |
 | [decision_variables_ortools.py](lecture2/decision_variables_ortools.py) | How MiniZinc variable declarations (enums, ranges, Booleans, unbounded `int`) look in OR-Tools |
 | [parameters_ortools.py](lecture2/parameters_ortools.py) | How MiniZinc parameters (fixed constants) look in Python, and how to use them in a model |
+| [constraints_ortools.py](lecture2/constraints_ortools.py) | Constraints as Boolean expressions: comparisons, AND, OR (incl. `x in 1..5 \/ x in 10..15`), NOT |
+| [global_constraints_ortools.py](lecture2/global_constraints_ortools.py) | Global constraints: `alldifferent`, `at_most`, `increasing` |
 | [boolean_conditions_ortools.py](lecture2/boolean_conditions_ortools.py) | and, or, not, implication, counting and xor in CP-SAT |
 | [multidim_arrays_ortools.py](lecture2/multidim_arrays_ortools.py) | Multidimensional arrays: lists of rows vs. dicts with tuple keys |
 | [aggregation_ortools.py](lecture2/aggregation_ortools.py) | Aggregation over arrays: `sum`, `max`, `min` of variables |
 | [aggregation_ortools.ipynb](lecture2/aggregation_ortools.ipynb) | Notebook version with 0-based indices, a `where` clause and the index-shift pitfall |
+| [available_workers_ortools.ipynb](lecture2/available_workers_ortools.ipynb) | `forall ... where`, `exists` and set variables: every available worker works on a task |
+| [available_workers_viz.py](lecture2/available_workers_viz.py) | Drawing helper used by the available-workers notebook (`draw_assignment`) |
+| [knapsack_ortools.py](lecture2/knapsack_ortools.py) | 0/1 knapsack: a sum constraint and a maximisation objective |
+| [knapsack_ortools.ipynb](lecture2/knapsack_ortools.ipynb) | Notebook version, with a check of all possible packings |
 | [harbour_ortools.py](lecture2/harbour_ortools.py) | Ship assignment: boats to docks, with restricted domains |
 | [harbour_ortools.ipynb](lecture2/harbour_ortools.ipynb) | Notebook version: solves the model, draws the harbour and a selection of all solutions |
 | [harbour_viz.py](lecture2/harbour_viz.py) | Drawing helpers used by the harbour notebook (`draw_harbour`, `draw_all`) |
@@ -32,6 +38,8 @@ Each lecture folder contains small examples, usually first written in
 
 - Map colouring: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/australia_ortools.ipynb)
 - Aggregation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/aggregation_ortools.ipynb)
+- Available workers: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/available_workers_ortools.ipynb)
+- Knapsack: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/knapsack_ortools.ipynb)
 - Harbour: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/harbour_ortools.ipynb)
 
 ### [lecture3](lecture3/)
