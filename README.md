@@ -18,6 +18,9 @@ Each lecture folder contains small examples, usually first written in
 | [decision_variables_ortools.py](lecture2/decision_variables_ortools.py) | How MiniZinc variable declarations (enums, ranges, Booleans, unbounded `int`) look in OR-Tools |
 | [parameters_ortools.py](lecture2/parameters_ortools.py) | How MiniZinc parameters (fixed constants) look in Python, and how to use them in a model |
 | [boolean_conditions_ortools.py](lecture2/boolean_conditions_ortools.py) | and, or, not, implication, counting and xor in CP-SAT |
+| [multidim_arrays_ortools.py](lecture2/multidim_arrays_ortools.py) | Multidimensional arrays: lists of rows vs. dicts with tuple keys |
+| [aggregation_ortools.py](lecture2/aggregation_ortools.py) | Aggregation over arrays: `sum`, `max`, `min` of variables |
+| [aggregation_ortools.ipynb](lecture2/aggregation_ortools.ipynb) | Notebook version with 0-based indices, a `where` clause and the index-shift pitfall |
 | [harbour_ortools.py](lecture2/harbour_ortools.py) | Ship assignment: boats to docks, with restricted domains |
 | [harbour_ortools.ipynb](lecture2/harbour_ortools.ipynb) | Notebook version: solves the model, draws the harbour and a selection of all solutions |
 | [harbour_viz.py](lecture2/harbour_viz.py) | Drawing helpers used by the harbour notebook (`draw_harbour`, `draw_all`) |
@@ -28,6 +31,7 @@ Each lecture folder contains small examples, usually first written in
 **Try the notebooks in your browser, no installation needed:**
 
 - Map colouring: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/australia_ortools.ipynb)
+- Aggregation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/aggregation_ortools.ipynb)
 - Harbour: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AImotion-Bavaria/kipro_wi/blob/main/lecture2/harbour_ortools.ipynb)
 
 ### [lecture3](lecture3/)
